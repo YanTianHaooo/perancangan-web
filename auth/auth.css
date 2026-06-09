@@ -1,0 +1,111 @@
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0B1F14 0%, #1B4332 50%, #2D6A4F 100%);
+    padding: 100px 20px 40px;
+}
+.auth-container {
+    width: 100%;
+    max-width: 450px;
+}
+.auth-card {
+    background: rgba(255,255,255,.95);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 25px 60px rgba(0,0,0,.3);
+    border: 1px solid rgba(255,255,255,.2);
+}
+.auth-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.auth-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.auth-header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.auth-header p {
+    color: var(--gray-500);
+    font-size: .9rem;
+}
+.auth-card .form-control {
+    background: var(--gray-100);
+    border: 2px solid transparent;
+}
+.auth-card .form-control:focus {
+    background: var(--white);
+    border-color: var(--primary);
+}
+.auth-card .btn {
+    margin-top: 10px;
+    padding: 14px;
+    font-size: 1rem;
+}
+.auth-footer {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid var(--gray-200);
+    font-size: .9rem;
+    color: var(--gray-600);
+}
+.auth-footer a {
+    color: var(--primary);
+    font-weight: 600;
+}
+.auth-footer a:hover {
+    color: var(--secondary);
+}
+
+/* dark tema */
+body.dark-theme .auth-container,
+body.dark-theme .auth-card {
+    background: #18251f !important;
+    color: #f4f8f5 !important;
+}
+
+body.dark-theme .auth-card * {
+    color: #f4f8f5;
+}
+
+body.dark-theme .auth-header h2 {
+    color: #ffffff !important;
+}
+
+body.dark-theme .auth-header p {
+    color: #c7d4cc !important;
+}
+
+body.dark-theme .auth-footer {
+    background: transparent !important;
+    color: #c7d4cc !important;
+}
+
+body.dark-theme .auth-footer a {
+    color: #86efac !important;
+}
+
+/* Label Email & Password */
+body.dark-theme .form-group label {
+    color: #ffffff !important;
+}
+
+/* Input */
+body.dark-theme .form-control {
+    background: #22342b !important;
+    color: #ffffff !important;
+    border: 2px solid #486154 !important;
+}
+
+/* Hilangkan warna putih bawaan */
+body.dark-theme .auth-card,
+body.dark-theme .auth-card::before,
+body.dark-theme .auth-card::after {
+    background-color: #18251f !important;
+}

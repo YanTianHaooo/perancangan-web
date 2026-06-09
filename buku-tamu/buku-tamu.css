@@ -1,0 +1,13 @@
+/* ===== BUKU TAMU PAGES ===== */
+.voucher-input {
+    background: var(--gray-100) !important;
+    border: 3px dashed var(--primary-light) !important;
+    border-radius: var(--radius-lg) !important;
+    padding: 18px !important;
+    transition: var(--transition);
+}
+.voucher-input:focus {
+    border-style: solid !important;
+    border-color: var(--primary) !important;
+    background: var(--white) !important;
+}

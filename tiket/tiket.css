@@ -1,0 +1,45 @@
+/* ===== TIKET PAGES ===== */
+.tiket-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: var(--gray-100);
+    border-radius: var(--radius);
+    margin-bottom: 12px;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+.tiket-row:hover {
+    border-color: var(--primary-light);
+    background: rgba(45,106,79,.05);
+}
+.tiket-info h4 { margin-bottom: 4px; font-size: 1.05rem; }
+.tiket-info p { color: var(--gray-500); font-size: .85rem; margin-bottom: 5px; }
+.tiket-harga { font-weight: 700; color: var(--primary); font-size: .95rem; }
+.tiket-qty { display: flex; align-items: center; gap: 8px; }
+.qty-btn {
+    width: 36px; height: 36px; border-radius: 50%;
+    border: 2px solid var(--gray-300); background: var(--white);
+    font-size: 1.2rem; cursor: pointer; display: flex;
+    align-items: center; justify-content: center;
+    transition: var(--transition); color: var(--gray-700);
+}
+.qty-btn:hover { border-color: var(--primary); color: var(--primary); background: rgba(45,106,79,.05); }
+.qty-input {
+    width: 50px; text-align: center; border: 2px solid var(--gray-300);
+    border-radius: var(--radius-sm); padding: 6px; font-size: 1rem;
+    font-weight: 600; font-family: 'Inter';
+}
+.qty-input:focus { outline: none; border-color: var(--primary); }
+.total-box {
+    background: linear-gradient(135deg, rgba(45,106,79,.05), rgba(45,106,79,.1));
+    border: 2px solid var(--primary-light);
+    border-radius: var(--radius); padding: 20px; margin-top: 20px;
+}
+.total-price {
+    font-family: 'Outfit'; font-size: 1.8rem; font-weight: 800; color: var(--primary);
+}
+@media (max-width: 576px) {
+    .tiket-row { flex-direction: column; gap: 15px; text-align: center; }
+}
