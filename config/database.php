@@ -4,7 +4,7 @@ define('DB_USER', 'root');
 define('DB_PASS', '');
 define('DB_NAME', 'orangutan_heaven');
 
-define('BASE_URL', '/uts/');
+define('BASE_URL', '/Perancangan-Web    /');
 
 define('SITE_NAME', 'Save Orangutan Unite for nature & wildlife');
 
